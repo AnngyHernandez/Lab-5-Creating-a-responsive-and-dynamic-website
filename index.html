@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AD Coatings — Professional Painting Services</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+HU:wght@100..400&family=Plus+Jakarta+Sans:wght@200..800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="AD Coatings Home">
+        <img src="AD Logo.png" alt="" class="brand-mark" />
+        <span class="brand-text">AD COATINGS</span>
+      </a>
+
+      <!-- Collapsing Menu Button -->
+      <button id="navToggle" class="nav-toggle" aria-expanded="false" aria-controls="siteNav">
+        <span class="sr-only">Toggle navigation</span>
+        ☰
+      </button>
+
+      <nav id="siteNav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a class="active" href="index.html">Home</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Banner-->
+  <section class="hero" role="region" aria-label="Hero">
+    <div class="hero-media">
+      <img src="Exterior.jpg" alt="" />
+    </div>
+    <div class="hero-content container">
+      <h1>Flawless Finishes. Exceptional Service.</h1>
+      <p>Your Trusted painting Experts for Builders, Property Managers & Business Owners Across Alberta.</p>
+      <a class="btn btn-primary" href="#contact">Get A Fast Quote</a>
+    </div>
+  </section>
+
+  <main id="main" class="container" role="main">
+    <!-- Intro -->
+    <section id="intro" class="section">
+      <h2>Welcome to AD Coatings</h2>
+      <p>At AD Coatings, we bring color, quality, and craftsmanship together to deliver high‑end painting services for
+        residential, commercial, and industrial spaces. Whether you're refreshing a home or managing a large‑scale
+        project, our team ensures flawless finishes and lasting results—on time and on budget.</p>
+      <div class="media-grid">
+        <figure>
+          <video title="Spray Painting" autoplay muted loop playsinline>
+            <source src="Intro.mp4" type="video/mp4">
+          </video>
+        </figure>
+        <figure class="ratio-16x9">
+          <iframe title="Professional painting tips" width="560" height="315"
+            src="https://www.youtube.com/embed/K3n34Td3zSQ?si=pJisLaNkafbrQkKD" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" loading="lazy" allowfullscreen></iframe>
+          <figcaption>We love sharing best practices</figcaption>
+        </figure>
+      </div>
+    </section>
+    <hr class="solid">
+    <h3>100% Satisfaction Garenteed</h3>
+    <hr class="solid">
+    <br>
+    <!-- About -->
+    <section id="about" class="section section-alt">
+      <h2>Our Story</h2>
+      <p>Known for attention to <b>detail, professionalism,</b> and a passion for <b>precision </b>, AD Coatings
+        transforms spaces with high-quality coatings and expert techniques. Our mission is simple: deliver stunning
+        results that <b>stand the test of time.</b></p>
+      <div class="about-media">
+        <video title="Contractor" autoplay muted loop plays inline>
+          <source src="Planning.mp4" type="video/mp4">
+        </video>
+      </div>
+
+    </section>
+
+    <!-- Services Snapshot -->
+    <section class="section" aria-labelledby="svcTitle">
+      <h2 id="svcTitle">What We Do</h2>
+      <p>We offer a full range of painting services tailored to meet the needs of homeowners, builders, property
+        managers, and businesses.</p>
+      <div class="card-grid">
+        <article class="card">
+          <img src="Residential.jpg" alt="Freshly painted living room interior." />
+          <div class="card-body">
+            <h4>Residential Painting</h4>
+            <p2>Interior & exterior services with a clean, respectful approach.</p2>
+            <a class="btn btn-secondary" href="services.html#residential">Learn more</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="Path.jpg" alt="Exterior of a commercial building." />
+          <div class="card-body">
+            <h4>Commercial & Industrial</h4>
+            <p2>Durable, professional finishes for high‑traffic environments.</p2>
+            <a class="btn btn-secondary" href="services.html#commercial">Learn more</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="Custom.jpg" alt="Artisan applying specialty finish." />
+          <div class="card-body">
+            <h4>Custom Solutions</h4>
+            <p2>Specialty finishes & surface prep designed for your project needs.</p2>
+            <a class="btn btn-secondary" href="services.html#custom">Learn more</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Dynamic Reviews loaded with fetch -->
+    <section class="section section-alt" aria-labelledby="reviewsTitle">
+      <h2 id="reviewsTitle">Recent Reviews</h2>
+      <div id="reviews" class="reviews-grid" aria-live="polite" aria-busy="true">
+        <p>Loading reviews…</p>
+      </div>
+      <button id="moreReviews" class="btn btn-outline">Load more</button>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section" aria-labelledby="contactTitle">
+      <h2 id="contactTitle">Let’s talk about your next project</h2>
+      <p>Have a space that needs a fresh coat of paint? Get a quick estimate or schedule a consultation—our team will
+        get back to you promptly.</p>
+
+      <div class="contact-layout">
+        <form id="quoteForm" novalidate>
+          <div class="field">
+            <label for="fname">First name</label>
+            <input id="fname" name="fname" autocomplete="given-name" required />
+          </div>
+          <div class="field">
+            <label for="lname">Last name</label>
+            <input id="lname" name="lname" autocomplete="family-name" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label for="service">Service</label>
+            <select id="service" name="service" required>
+              <option value="">Select a service</option>
+              <option>Residential</option>
+              <option>Commercial</option>
+              <option>Industrial</option>
+              <option>Custom / Specialty</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="details">Project details</label>
+            <textarea id="details" name="details" rows="5" placeholder="Tell us about the space, timeline, and goals…"
+              required></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Request a quote</button>
+          <p id="formNote" role="status" class="form-note" aria-live="polite"></p>
+        </form>
+        <aside class="contact-aside" aria-label="Map and contact">
+          <div class="ratio-4x3">
+            <iframe title="AD Coatings service area map (Calgary, AB)" loading="lazy"
+              src="https://www.google.com/maps?q=Calgary,+AB&output=embed"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <ul class="contact-list">
+            <li>📞 <a href="tel:+14035550123">403‑555‑0123</a></li>
+            <li>📧 <a href="mailto:hello@adcoatings.ca">hello@adcoatings.ca</a></li>
+            <li>⏱ Mon–Fri 8am–6pm</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <!----footer class="site-footer" role="contentinfo"-->
+  <footer>
+    <div Id="leftFooter">
+      <div>
+        <p class="tagline">“Coatings You Can Count On.”</p>
+      </div>
+      <div>
+        <a class="externalWebsiteLink" href="https://www.facebook.com" target="_blank" rel="noopener"><img src="fb.png"
+            alt="Facebook icon"></a>
+        <a class="externalWebsiteLink" href="https://www.instagram.com" target="_blank" rel="noopener"><img
+            src="insta.png" alt="Instagram icon"></a>
+        <a class="externalWebsiteLink" href="https://www.linkedin.com" target="_blank" rel="noopener"><img
+            src="linkedin.png" alt="LinkedIn Icon"></a>
+        <a class="externalWebsiteLink" href="https://www.twitter.com" target="_blank" rel="noopener"><img
+            src="twitter.png" alt="Twitter Icon"></a>
+      </div>
+      <div><small>
+        <p><span id="year"></span> • AD Coatings • Calgary, Alberta</p>
+        </small></div>
+    </div>
+
+    <div id="rightFooter">
+      <table>
+        <thead>
+          <tr>
+            <th>About</th>
+            <th>Careers</th>
+            <th>Start A live Chat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Our Story</td>
+            <td>My Account</td>
+            <td>Inquire Qoute</td>
+          </tr>
+          <tr>
+            <td>Products</td>
+            <td>Custom</td>
+            <td>Epoxy</td>
+          </tr>
+          <tr>
+            <td>Commercial</td>
+            <td>Residential</td>
+            <td>Industrial</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+   
+  </footer>
+
+<!-- Success / Info Modal -->
+<div id="notifyModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+  <div class="modal-card" role="document">
+    <h3 id="modalTitle">Thanks! Inquiry sent ✅</h3>
+    <p class="modal-message">
+      Please allow up to 3 business days for a response. We’ll get back to you as fast as possible.
+    </p>
+    <button id="modalClose" class="btn btn-primary" type="button" aria-label="Close popup">Got it</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>
